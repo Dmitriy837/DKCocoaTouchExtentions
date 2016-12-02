@@ -1,0 +1,6 @@
+framework module Pods_DKCocoaTouchExtentions_Tests {
+  umbrella header "Pods-DKCocoaTouchExtentions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

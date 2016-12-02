@@ -1,0 +1,16 @@
+PODS:
+  - DKCocoaTouchExtentions (0.1.0)
+
+DEPENDENCIES:
+  - DKCocoaTouchExtentions (from `../`)
+
+EXTERNAL SOURCES:
+  DKCocoaTouchExtentions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DKCocoaTouchExtentions: 03d69bbf1c9bfb3996dd99d989d855cd9e789ef6
+
+PODFILE CHECKSUM: 142130a44937b6184fccf78860d850dc897fb0e5
+
+COCOAPODS: 1.1.1

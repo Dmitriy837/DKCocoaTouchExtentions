@@ -1,0 +1,6 @@
+framework module DKCocoaTouchExtentions {
+  umbrella header "DKCocoaTouchExtentions-umbrella.h"
+
+  export *
+  module * { export * }
+}
