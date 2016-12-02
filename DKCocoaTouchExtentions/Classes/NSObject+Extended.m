@@ -17,7 +17,7 @@
     }
     else if ([self respondsToSelector:@selector(stringValue)])
     {
-        return [(NSValue*)self stringValue];
+        return [(NSNumber*)self stringValue];
     }
     else return nil;
 }
