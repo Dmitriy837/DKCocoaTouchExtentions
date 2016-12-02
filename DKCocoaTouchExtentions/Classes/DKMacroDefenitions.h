@@ -15,5 +15,6 @@
 #define SINGLETON_GETTER(getterName, className) static className *instance;+(instancetype)getterName{if(!instance){instance=[self new];}return instance;}
 #define SINGLETON_GETTER_THREAD_SAFE(getterName, className) static className *instance;+(instancetype)getterName{if(!instance){dispatch_once_t token;dispatch_once(&token, ^{instance=[self new];});}return instance;}
 #define STATIC_PROPERTY_GETTER(getterName, className, singletonGetter) +(className*)getterName{return [[self singletonGetter] getterName];}
+#define STATIC_PROPERTY_SETTER(setterName, className, singletonGetter) +(void)setterName:(className*)value{[[self singletonGetter] setterName:value];}
 
 #endif /* MacroDefenitions_h */
