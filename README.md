@@ -107,6 +107,7 @@ return [NSString stringWithFormat:@"Title: %@\nArray: %@", self.objectTitle, sel
 I prefer to say
 
 ```objective-c
+@implementation DKObject
 PROPERTY_NO_NIL                     (someObservableProperty, NSObject)
 PROPERTY_NO_NIL_WITH_DEFAULT_VALUE  (objectTitle, @"Default title")
 SINGLETON_GETTER_THREAD_SAFE        (sharedInstance, DKObject)
@@ -117,9 +118,10 @@ STATIC_PROPERTY_GETTER              (description, NSString, sharedInstance)
 {
 return [NSString stringWithFormat:@"Title: %@\nArray: %@", self.objectTitle, self.arrayOfStrings];
 }
+@end
 ```
 
-So that we can get our description printed with all of the default values to the log with the simple call of 
+So that we can get our description printed with all of the default values to the log whenever we need it with the simple call of 
 
 ```
 NSLog(@"%@", [DKObject description]);
